@@ -1,5 +1,8 @@
 # OpenOCD-CH341A
 
+[![](https://img.shields.io/github/license/John-sanpe/openocd-ch341a-patch.svg)](https://github.com/John-sanpe/openocd-ch341a-patch/blob/master/COPYING)
+![](https://visitor-badge.glitch.me/badge?page_id=OpenOCD-CH341A)
+
 ## Overview
 
 This driver is implementing synchronous bitbang mode of an WCH CH341A, CH341H and similar USB Parallel/SPI bridge ICs by reusing UIO signals as GPIO.
@@ -28,20 +31,40 @@ ${PREFIX}/bin/ch341a-openocd -f ${PREFIX}/share/openocd/scripts/interface/ch341a
 #### Default physical pin numbers for CH341A in 28-pin SOP package:
 
 D3(18) - TCK
+
 D0(15) - TMS
+
 D7(22) - TDI
+
 D5(20) - TDO
+
 D1(16) - TRST
+
 D2(17) - SRST
 
 #### Default physical pin numbers for CH341H in 20-pin SSOP package:
 
 DCK(13) - TCK
+
 CS0(10) - TMS
+
 DIN(17) - TDI
+
 DOUT(15) - TDO
+
 CS1(11) - TRST
+
 CS2(12) - SRST
+
+#### Default physical pin numbers for CH341A MinProgramment:
+
+CLK(1) - TCK
+
+CS(2) - TMS
+
+MOSI(3) - TDI
+
+MISO(4) - TDO
 
 ## Commands configure
 
@@ -100,4 +123,3 @@ This is free software: you can redistribute it and/or modify it under the terms 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
-
