@@ -69,7 +69,7 @@ MISO(4) - TDO
 ## Commands configure
 
 ```
-ch341a vid_pid} @var{vid} @var{pid}
+ch341a @{vid_pid} @var{vid} @var{pid}
 ```
 
 The vendor ID and product ID of the adapter. If not specified, default 0x1a86:0x5512 is used.
